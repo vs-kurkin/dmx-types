@@ -2,14 +2,18 @@
     "author": "mail@b-vladi.ru",
     "description": "TypesScript declarations",
     "devDependencies": {
-        "typescript": "next",
         "@typescript-eslint/eslint-plugin": "^7.9.0",
         "@typescript-eslint/parser": "^7.9.0",
-        "@vk/dmx": "github:B-Vladi/dmx#0.0.4"
+        "@vk/dmx": "github:B-Vladi/dmx#0.0.4",
+        "typescript": "next"
     },
     "exports": {
-        ".": "./types/*.d.ts"
+        "default": "./types/index.d.ts"
     },
+    "files": [
+        "types"
+    ],
+    "types": "./types/index.d.ts",
     "license": "UNLICENSED",
     "name": "@vk/dmx-types",
     "private": true,
@@ -18,5 +22,5 @@
         "lint": "npx eslint ."
     },
     "type": "module",
-    "version": "0.0.1"
+    "version": "0.0.2"
 }

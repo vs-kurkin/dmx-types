@@ -1,4 +1,3 @@
 
-declare module '@vk/dmx' {
-  export * from '@vk/dmx'
-}
+export * from '@/serial'
+export * from '@/device'

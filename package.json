@@ -7,13 +7,11 @@
         "@vk/dmx": "github:B-Vladi/dmx#0.0.4",
         "typescript": "next"
     },
-    "exports": {
-        "default": "./types/index.d.ts"
+    "imports": {
+        "#*": "./types/*.d.ts"
     },
-    "files": [
-        "types"
-    ],
-    "types": "./types/index.d.ts",
+    "exports": "./types/*.d.ts",
+    "types": "./types/*.d.ts",
     "license": "UNLICENSED",
     "name": "@vk/dmx-types",
     "private": true,
@@ -22,5 +20,5 @@
         "lint": "npx eslint ."
     },
     "type": "module",
-    "version": "0.0.2"
+    "version": "0.0.3"
 }

@@ -8,7 +8,7 @@
         "@vk/dmx": "github:B-Vladi/dmx#0.0.4"
     },
     "exports": {
-        "types": "./types/*"
+        ".": "./types/*.d.ts"
     },
     "license": "UNLICENSED",
     "name": "@vk/dmx-types",

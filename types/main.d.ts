@@ -25,7 +25,7 @@ export interface UniverseOptions {
 
 export interface Device {
   channels: Channel[];
-  mode?: Map<string, Channel[]>;
+  mode?: Record<string, Channel[]>;
   universe?: string;
   vendor?: string;
   model?: string;

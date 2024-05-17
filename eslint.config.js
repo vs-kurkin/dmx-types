@@ -1,3 +1,3 @@
 export default {
-  files: ['lib/*.d.ts'],
+  files: ['types/*'],
 }

@@ -3,27 +3,19 @@
     "typeAcquisition": {
         "enable": true
     },
-    "exclude": ["node_modules"],
-    "include": ["types"],
+    "exclude": [ "node_modules" ],
+    "include": [ "types/*.d.ts" ],
+    "paths": {
+        "#*": [ "types/*.d.ts" ]
+    },
     "compilerOptions": {
         "allowImportingTsExtensions": true,
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
-        "declaration": true,
-        "declarationDir": "types",
         "emitDeclarationOnly": true,
-        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
-        "lib": [
-            "ESNext",
-        ],
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "paths": {
-            "@/*": [ "types/*" ]
-        },
-        "strict": true,
-        "target": "ESNext",
-        "typeRoots": [ "node_modules/@types" ]
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "strict": true
     }
 }

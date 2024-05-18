@@ -10,9 +10,8 @@
     "imports": {
         "#*": "./types/*.d.ts"
     },
-    "exports": "./types/index.d.ts",
-    "types": "./types/*",
     "license": "UNLICENSED",
+    "main": "./types/index.d.ts",
     "name": "@vk/dmx-types",
     "private": true,
     "scripts": {
@@ -20,5 +19,5 @@
         "lint": "npx eslint ."
     },
     "type": "module",
-    "version": "0.0.4"
+    "version": "0.0.5"
 }

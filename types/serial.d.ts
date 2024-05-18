@@ -9,7 +9,7 @@ export declare interface Serial {
   productId: string;
 }
 
-export declare interface UniverseOptions {
+export declare interface SerialOptions {
   host?: string;
   port?: string;
   baudRate?: number;

@@ -2,7 +2,6 @@
     "author": "mail@b-vladi.ru",
     "description": "TypesScript declarations",
     "devDependencies": {
-        "@vk/dmx": "github:B-Vladi/dmx#0.0.4",
         "eslint": "^8.57.0",
         "typescript": "^5.4.5",
         "typescript-eslint": "^7.11.0"
@@ -20,8 +19,10 @@
     "scripts": {
         "build": "tsc --declaration",
         "lint": "npx eslint .",
-        "update": "npm update --save"
+        "update": "npm update --save",
+        "prerelease": "npm run lint",
+        "release": "git tag $(npm_package_version) && git push origin master && git push --tags"
     },
     "type": "module",
-    "version": "0.0.6"
+    "version": "0.0.7"
 }

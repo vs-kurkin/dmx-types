@@ -2,11 +2,14 @@
     "author": "mail@b-vladi.ru",
     "description": "TypesScript declarations",
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^7.9.0",
-        "@typescript-eslint/parser": "^7.9.0",
         "@vk/dmx": "github:B-Vladi/dmx#0.0.4",
-        "typescript": "next"
+        "eslint": "^8.57.0",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.11.0"
     },
+    "files": [
+        "types"
+    ],
     "imports": {
         "#*": "./types/*.d.ts"
     },
@@ -16,8 +19,9 @@
     "private": true,
     "scripts": {
         "build": "tsc --declaration",
-        "lint": "npx eslint ."
+        "lint": "npx eslint .",
+        "update": "npm update --save"
     },
     "type": "module",
-    "version": "0.0.5"
+    "version": "0.0.6"
 }

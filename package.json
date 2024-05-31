@@ -20,9 +20,9 @@
         "build": "tsc --declaration",
         "lint": "npx eslint .",
         "prerelease": "npm install && npm run lint && git commit -m \"Release %npm_package_version%\" -a",
-        "release": "git tag -a %npm_package_version% -f -m \"Release %npm_package_version%\" && git push && git push --tags",
+        "release": "git tag -a %npm_package_version% -f -m \"Release %npm_package_version%\" && git push origin && git push origin --tags",
         "update": "npm update --save"
     },
     "type": "module",
-    "version": "0.0.9"
+    "version": "0.0.10"
 }

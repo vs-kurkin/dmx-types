@@ -1,17 +1,13 @@
 {
     "exclude": [ "node_modules" ],
-    "include": [ "types/*.d.ts" ],
-    "paths": {
-        "#*": [ "types/*.d.ts" ]
-    },
+    "include": [ "types" ],
     "compilerOptions": {
-        "allowImportingTsExtensions": true,
-        "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "emitDeclarationOnly": true,
-        "module": "NodeNext",
-        "declaration": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true
+        "module": "ESNext",
+        "paths": {
+            "#*": [ "./types/*.d.ts" ]
+        },
+        "declaration": true
     }
 }

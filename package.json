@@ -13,7 +13,7 @@
         "#*": "./types/*.d.ts"
     },
     "license": "UNLICENSED",
-    "main": "./types/index.d.ts",
+    "types": "./types/index.d.ts",
     "name": "@vk/dmx-types",
     "private": true,
     "scripts": {
@@ -23,5 +23,5 @@
         "release": "git tag -f -a %npm_package_version% -m \"Release %npm_package_version%\" && git push origin --tags --force"
     },
     "type": "module",
-    "version": "0.0.7"
+    "version": "0.0.8"
 }

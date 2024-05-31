@@ -1,8 +1,4 @@
 {
-    "compileOnSave": false,
-    "typeAcquisition": {
-        "enable": true
-    },
     "exclude": [ "node_modules" ],
     "include": [ "types/*.d.ts" ],
     "paths": {
@@ -13,9 +9,9 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "emitDeclarationOnly": true,
-        "forceConsistentCasingInFileNames": true,
         "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
         "strict": true
     }
 }

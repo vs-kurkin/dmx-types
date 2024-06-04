@@ -1,4 +1,3 @@
-
 export declare interface Serial {
   path: string;
   manufacturer: string;
@@ -21,3 +20,14 @@ export declare interface SerialOptions {
   path: string;
   driver: string;
 }
+
+export declare type DRIVERS = [
+  'socketio',
+  'dmx4all',
+  'enttec-usb-dmx-pro',
+  'enttec-open-usb-dmx',
+  'dmxking-ultra-dmx-pro',
+  'artnet',
+  'bbdmx',
+  'sacn',
+]

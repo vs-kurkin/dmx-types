@@ -2,7 +2,8 @@
 declare module '@vk/dmx-types' {
   export type {
     Serial,
-    SerialOptions
+    SerialOptions,
+    DRIVERS as SerialDriver
   } from '#serial'
 
   export type {

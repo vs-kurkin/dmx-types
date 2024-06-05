@@ -2,9 +2,13 @@
     "author": "mail@b-vladi.ru",
     "description": "TypesScript declarations",
     "devDependencies": {
-        "eslint": "^8.57.0",
-        "typescript": "^5.4.5",
-        "typescript-eslint": "^7.12.0"
+        "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.27",
+        "@typescript-eslint/parser": "^8.0.0-alpha.27",
+        "eslint": "^9.4.0",
+        "typescript": "^5.4.5"
+    },
+    "exports": {
+        "types": "./types/index.d.ts"
     },
     "files": [
         "types"
@@ -13,7 +17,6 @@
         "#*": "./types/*.d.ts"
     },
     "license": "UNLICENSED",
-    "types": "./types/index.d.ts",
     "name": "@vk/dmx-types",
     "private": true,
     "scripts": {
@@ -24,5 +27,6 @@
         "update": "npm update --save"
     },
     "type": "module",
-    "version": "0.0.15"
+    "types": "./types/index.d.ts",
+    "version": "0.0.16"
 }

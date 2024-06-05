@@ -1,4 +1,3 @@
-
 export declare interface Device {
   channels: Channel[];
   mode?: Record<string, Channel[]>;

@@ -1,9 +1,8 @@
-import tsESLint from 'typescript-eslint'
+import tsESLint from '@typescript-eslint/eslint-plugin'
 
-export default tsESLint.config(
+export default [
   {
     extends: tsESLint.configs.recommendedTypeCheckedOnly,
-
     files: [ './types/*.d.ts' ],
 
     languageOptions: {
@@ -12,8 +11,5 @@ export default tsESLint.config(
         project: './tsconfig.json'
       }
     },
-
-    rules: {
-    }
   }
-);
+];

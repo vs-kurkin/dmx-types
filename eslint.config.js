@@ -2,14 +2,13 @@ import tsESLint from '@typescript-eslint/eslint-plugin'
 
 export default [
   {
-    extends: tsESLint.configs.recommendedTypeCheckedOnly,
     files: [ './types/*.d.ts' ],
-
+    extends: tsESLint.configs.recommendedTypeCheckedOnly,
     languageOptions: {
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        project: './tsconfig.json'
-      }
+        project: true,
+      },
     },
-  }
+  },
 ];

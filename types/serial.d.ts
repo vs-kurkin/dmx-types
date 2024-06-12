@@ -22,6 +22,7 @@ export declare interface SerialOptions {
 }
 
 export declare type DRIVERS = [
+  'null',
   'socketio',
   'dmx4all',
   'enttec-usb-dmx-pro',

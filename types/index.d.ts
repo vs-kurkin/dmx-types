@@ -5,7 +5,8 @@ declare module '@vk/dmx-types' {
     SerialDrivers,
     SerialList,
     SerialDriver,
-    Universes
+    SerialNumber,
+    Universes,
   } from '#serial'
 
   export type {

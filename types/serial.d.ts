@@ -9,7 +9,8 @@ export declare interface Serial {
 }
 
 export declare type SerialList = Serial[]
-export declare type Universes = Serial['serialNumber'][]
+export declare type SerialNumber = Serial['serialNumber']
+export declare type Universes = SerialNumber[]
 
 export declare interface SerialOptions {
   host?: string;

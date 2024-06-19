@@ -14,6 +14,17 @@ export declare interface Channel {
   min?: number;
   name?: string;
   steps?: number[];
-  type: string;
+  type: keyof typeof ChannelType;
   value: number;
+}
+
+export declare enum ChannelType {
+  'strobe',
+  'rotate',
+  'color',
+  'display',
+  'laser',
+  'lamp',
+  'head',
+  'mode',
 }

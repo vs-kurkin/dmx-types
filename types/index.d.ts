@@ -4,18 +4,17 @@ declare module '@vk/dmx-types' {
     SerialDriver,
     SerialDrivers,
     SerialList,
-    SerialNumber,
+    SerialID,
     SerialOptions,
     SerialProperty,
-    UniverseID,
-    UniverseList,
+    SerialUniverses,
+    SerialDevices,
   } from '#serial'
 
   export type {
     Device,
     DeviceIndex,
     DeviceList,
-    DeviceMap,
     DeviceProperty,
     DeviceMode,
     Channel,

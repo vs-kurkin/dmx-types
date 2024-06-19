@@ -8,11 +8,12 @@ export declare interface Serial {
   productId: string
 }
 
-export declare type SerialList = Serial[]
 export declare type SerialProperty<Key extends keyof Serial> = Serial[Key]
-export declare type SerialNumber = SerialProperty<'serialNumber'>
-export declare type UniverseList = SerialNumber[]
-export declare type UniverseID = UniverseList[number]
+export declare type SerialID = SerialProperty<'serialNumber'>
+
+export declare type SerialList = Serial[]
+export declare interface SerialDevices extends Map<SerialID, Serial> {}
+export declare interface SerialUniverses extends Array<SerialID> {}
 
 export declare interface SerialOptions {
   host?: string
@@ -22,7 +23,7 @@ export declare interface SerialOptions {
   stopBits?: number
   universe?: number
   interval?: number
-  id: SerialNumber
+  id: SerialID
   path: string
   driver: SerialDriver
 }

@@ -16,7 +16,6 @@
             "es6",
             "scripthost",
             "esnext",
-            "node"
         ]
     }
 }

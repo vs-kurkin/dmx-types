@@ -1,11 +1,11 @@
 export declare interface Serial {
-  path: string;
-  manufacturer: string;
-  serialNumber: string;
-  pnpId: string;
-  friendlyName: string;
-  vendorId: string;
-  productId: string;
+  path: string
+  manufacturer: string
+  serialNumber: string
+  pnpId: string
+  friendlyName: string
+  vendorId: string
+  productId: string
 }
 
 export declare type SerialList = Serial[]
@@ -13,16 +13,16 @@ export declare type SerialNumber = Serial['serialNumber']
 export declare type Universes = SerialNumber[]
 
 export declare interface SerialOptions {
-  host?: string;
-  port?: string;
-  baudRate?: number;
-  dataBits?: number;
-  stopBits?: number;
-  universe?: number;
-  interval?: number;
-  id: string;
-  path: string;
-  driver: string;
+  host?: string
+  port?: string
+  baudRate?: number
+  dataBits?: number
+  stopBits?: number
+  universe?: number
+  interval?: number
+  id: string
+  path: string
+  driver: string
 }
 
 export declare type SerialDrivers = [

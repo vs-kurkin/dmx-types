@@ -7,7 +7,7 @@ declare module '@vk/dmx-types' {
     SerialNumber,
     SerialOptions,
     SerialProperty,
-    Universe,
+    UniverseID,
     UniverseList,
   } from '#serial'
 

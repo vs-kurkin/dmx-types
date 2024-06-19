@@ -1,4 +1,4 @@
-import { Serial, SerialNumber, Universe } from '#serial'
+import { Serial, SerialNumber, UniverseID } from '#serial'
 
 export declare type DeviceMode = Record<string, ChannelList>
 
@@ -7,14 +7,17 @@ export declare interface Device {
   mode?: DeviceMode
   model?: string
   name?: string
-  universe?: Universe
+  universe?: UniverseID
   vendor?: string
 }
 
-export type DeviceList = Device[]
-export type DeviceIndex = DeviceList[number]
-export type DeviceProperty<Key extends keyof Device> = Device[Key]
-export type DeviceMap = Map<SerialNumber, Serial>
+export declare type DeviceMap = Map<SerialNumber, Serial>
+export declare interface DeviceList {
+  [key: number]: Device
+}
+
+export declare type DeviceIndex = keyof DeviceList
+export declare type DeviceProperty<Key extends keyof Device> = Device[Key]
 
 export declare interface Channel {
   amount?: number
@@ -38,5 +41,7 @@ export declare enum ChannelTypes {
   'mode',
 }
 
-export declare type ChannelList = Channel[]
+export declare interface ChannelList {
+  [key: number]: Channel
+}
 export declare type ChannelType = keyof typeof ChannelTypes

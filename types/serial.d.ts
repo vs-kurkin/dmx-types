@@ -22,9 +22,9 @@ export declare interface SerialOptions {
   stopBits?: number
   universe?: number
   interval?: number
-  id: string
+  id: SerialNumber
   path: string
-  driver: string
+  driver: SerialDriver
 }
 
 export declare type SerialDrivers = [

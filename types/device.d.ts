@@ -1,3 +1,5 @@
+import type { Serial } from '#serial'
+
 export declare interface Device {
   channels: Channel[];
   mode?: Record<string, Channel[]>;
@@ -6,6 +8,9 @@ export declare interface Device {
   universe?: string;
   vendor?: string;
 }
+
+export type DeviceList = Device[]
+export type DeviceMap = Map<Serial['serialNumber'], Serial>;
 
 export declare interface Channel {
   amount?: number;

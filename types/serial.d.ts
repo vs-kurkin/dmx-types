@@ -8,6 +8,8 @@ export declare interface Serial {
   productId: string;
 }
 
+export declare type SerialList = Serial[]
+
 export declare interface SerialOptions {
   host?: string;
   port?: string;
@@ -21,7 +23,7 @@ export declare interface SerialOptions {
   driver: string;
 }
 
-export declare type DRIVERS = [
+export declare type SerialDrivers = [
   'null',
   'socketio',
   'dmx4all',
@@ -32,3 +34,5 @@ export declare type DRIVERS = [
   'bbdmx',
   'sacn',
 ]
+
+export declare type SerialDriver = SerialDrivers[number]

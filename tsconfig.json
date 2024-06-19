@@ -8,6 +8,15 @@
         "paths": {
             "#*": [ "./types/*.d.ts" ]
         },
-        "declaration": true
+        "declaration": true,
+        "lib": [
+            "decorators",
+            "dom",
+            "es5",
+            "es6",
+            "scripthost",
+            "esnext",
+            "node"
+        ]
     }
 }

@@ -10,6 +10,8 @@ export declare interface Device {
 }
 
 export type DeviceList = Device[]
+export type DeviceIndex = DeviceList[number]
+export type DeviceProperty<Key extends keyof Device> = DeviceIndex[Key]
 export type DeviceMap = Map<Serial['serialNumber'], Serial>
 
 export declare interface Channel {

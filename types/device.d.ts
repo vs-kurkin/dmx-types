@@ -1,6 +1,6 @@
 import { SerialID } from '#serial'
 
-export declare type DeviceMode<Key extends string = string> = Record<Key, ChannelList>
+export declare type DeviceMode<Key extends string = string> = Map<Key, ChannelList>
 
 export declare interface Device {
   channels: ChannelList

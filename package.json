@@ -14,6 +14,7 @@
         "#*": "./types/*.d.ts"
     },
     "license": "UNLICENSED",
+    "main": "",
     "name": "@dmx-cloud/dmx-types",
     "scripts": {
         "build": "tsc --declaration",
@@ -26,5 +27,5 @@
     },
     "type": "module",
     "types": "./types/index.d.ts",
-    "version": "0.0.39"
+    "version": "0.0.40"
 }

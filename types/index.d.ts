@@ -1,4 +1,4 @@
-declare module '@vk/dmx-types' {
+declare module '@dmx-cloud/dmx-types' {
   export type {
     Serial,
     SerialDriver,

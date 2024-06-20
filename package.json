@@ -14,16 +14,17 @@
         "#*": "./types/*.d.ts"
     },
     "license": "UNLICENSED",
-    "name": "@vk/dmx-types",
+    "name": "@dmx-cloud/dmx-types",
     "private": true,
     "scripts": {
         "build": "tsc --declaration",
         "lint": "npx eslint .",
         "prerelease": "npm install && npm run lint && git commit -m \"Release %npm_package_version%\" -a",
         "release": "git tag -a %npm_package_version% -f -m \"Release %npm_package_version%\" && git push && git push --tags",
-        "update": "npm update --save"
+        "update": "npm update --save",
+        "npm:publish": "npm publish --access public"
     },
     "type": "module",
     "types": "./types/index.d.ts",
-    "version": "0.0.37"
+    "version": "0.0.38"
 }

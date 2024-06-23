@@ -19,11 +19,11 @@
     "scripts": {
         "build": "tsc --declaration",
         "lint": "npx eslint .",
+        "npm:publish": "npm publish --access public",
+        "postrelease": "npm run npm:publish",
         "prerelease": "npm install && npm run lint && git commit -m \"Release %npm_package_version%\" -a",
         "release": "git tag -a %npm_package_version% -f -m \"Release %npm_package_version%\" && git push && git push --tags",
-        "postrelease": "npm run npm:publish",
-        "update": "npm update --save",
-        "npm:publish": "npm publish --access public"
+        "update": "npm update --save"
     },
     "type": "module",
     "types": "./types/index.d.ts",

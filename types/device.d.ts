@@ -13,7 +13,7 @@ export declare interface Device {
 
 export declare interface DeviceList extends Array<Device> {}
 
-export declare type DeviceIndex = keyof DeviceList
+export declare type DeviceIndex<Key extends keyof DeviceList> = Key
 export declare type DeviceProperty<Key extends keyof Device> = Device[Key]
 
 export declare interface Channel {

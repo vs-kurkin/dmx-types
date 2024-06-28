@@ -1,20 +1,16 @@
 {
-    "exclude": [ "node_modules" ],
-    "include": [ "types" ],
     "compilerOptions": {
         "baseUrl": ".",
+        "declaration": true,
         "emitDeclarationOnly": true,
+        "lib": [
+            "esnext"
+        ],
         "module": "ESNext",
         "paths": {
             "#*": [ "./types/*.d.ts" ]
-        },
-        "declaration": true,
-        "lib": [
-            "decorators",
-            "dom",
-            "es5",
-            "es6",
-            "esnext",
-        ]
-    }
+        }
+    },
+    "exclude": [ "node_modules" ],
+    "include": [ "types" ]
 }

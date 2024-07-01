@@ -6,6 +6,7 @@ export default [
       tsESLint.configs.recommendedTypeCheckedOnly,
       tsESLint.configs.stylecticTypeCheckedOnly,
     ],
+
     files: [ './types/*.d.ts' ],
 
     languageOptions: {
@@ -15,4 +16,4 @@ export default [
       },
     },
   },
-];
+]

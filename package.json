@@ -2,8 +2,8 @@
     "author": "mail@b-vladi.ru",
     "description": "TypesScript declarations",
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.41",
-        "@typescript-eslint/parser": "^8.0.0-alpha.41",
+        "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.44",
+        "@typescript-eslint/parser": "^8.0.0-alpha.44",
         "eslint": "^9.7.0",
         "typescript": "^5.5.3"
     },

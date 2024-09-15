@@ -18,11 +18,11 @@
     "name": "@dmx-cloud/dmx-types",
     "scripts": {
         "ci:release": "npm version minor -m \"Release %s\"",
+        "dev:clean": "git clean -f",
         "dev:format": "npm run lint -- --fix",
-        "dev:push": "npm run ci:release && git push && git push --tags",
+        "dev:release": "npm run ci:release && git push && git push --tags",
         "dev:update": "npm update --save",
-        "lint": "npx eslint .",
-        "preversion": "git clean -f"
+        "lint": "npx eslint ."
     },
     "type": "module",
     "types": "./types/index.d.ts",

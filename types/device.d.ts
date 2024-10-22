@@ -1,35 +1,35 @@
 import { SerialID } from '#serial'
 
-export declare type DeviceMode<Key extends string = string> = Map<Key, ChannelList>
+export type DeviceMode<Key extends string = string> = Map<Key, ChannelList>;
 
-export declare interface Device {
-  channels: ChannelList
-  mode?: DeviceMode
-  model?: string
-  name?: string
-  universe?: SerialID
-  vendor?: string
+export interface Device {
+  channels: ChannelList;
+  mode?: DeviceMode;
+  model?: string;
+  name?: string;
+  universe?: SerialID;
+  vendor?: string;
 }
 
-export declare interface DeviceList extends Array<Device> {}
+export type DeviceList = Device[];
 
-export declare type DeviceIndex<Key extends keyof DeviceList = number> = Key
-export declare type DeviceProperty<Key extends keyof Device = keyof Device> = Device[Key]
+export type DeviceIndex<Key extends keyof DeviceList = number> = Key;
+export type DeviceProperty<Key extends keyof Device = keyof Device> = Device[Key];
 
-export declare interface Channel {
-  amount?: number
-  default?: number
-  max?: number
-  min?: number
-  name?: string
-  steps?: number[]
-  type: ChannelType
-  value?: number
+export interface Channel {
+  amount?: number;
+  default?: number;
+  max?: number;
+  min?: number;
+  name?: string;
+  steps?: number[];
+  type: ChannelType;
+  value?: number;
 }
 
-export declare interface ChannelList extends Array<Channel> {}
+export type ChannelList = Channel[];
 
-export declare type ChannelTypes = [
+export type ChannelTypes = [
   'color',
   'display',
   'head',
@@ -38,6 +38,6 @@ export declare type ChannelTypes = [
   'mode',
   'rotate',
   'strobe'
-]
+];
 
-export declare type ChannelType = ChannelTypes[number]
+export type ChannelType = ChannelTypes[number];

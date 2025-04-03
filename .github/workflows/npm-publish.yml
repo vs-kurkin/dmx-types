@@ -17,7 +17,13 @@ jobs:
       - run: npm ci
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
-        with:
+        - uses: actions/setup-node@v4
+          with:
+            node-version: '20.x'
+            registry-url: 'https://registry.npmjs.org'
+        - run: npm publish
+          env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm publish
